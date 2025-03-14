@@ -16,3 +16,33 @@ This project demonstrates an end-to-end pipeline for classifying images from the
 
 ## Project Structure
 
+Install the dependencies using pip:
+
+```bash
+pip install tensorflow numpy matplotlib pillow
+
+git clone <repository-url>
+cd <repository-directory>
+```
+
+### Model Architecture
+
+The CNN model is defined as follows:
+
+- **Convolutional Layers:**  
+  - Two 2D convolution layers with 32 filters each, a kernel size of (3, 3), ReLU activation, and max-norm constraints to regularize the network.
+
+- **Dropout Layers:**  
+  - Dropout layers are applied after the convolutional layers and the dense layer to prevent overfitting.
+
+- **Pooling Layer:**  
+  - A max-pooling layer is used to reduce the spatial dimensions of the feature maps.
+
+- **Flatten Layer:**  
+  - A flatten layer converts the 2D feature maps into a 1D vector.
+
+- **Dense Layers:**  
+  - One dense layer with 512 neurons and ReLU activation.  
+  - A final dense layer with 10 neurons and softmax activation for classification.
+
+The model is compiled using the Stochastic Gradient Descent (SGD) optimizer with a learning rate of 0.01, momentum of 0.9, and a decay rate calculated based on the number of epochs.
