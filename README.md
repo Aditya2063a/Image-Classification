@@ -2,6 +2,24 @@
 
 This project demonstrates an end-to-end pipeline for classifying images from the CIFAR-10 dataset using a Convolutional Neural Network (CNN) built with Keras and TensorFlow. The workflow includes data loading and visualization, model creation, training, saving, and inference on sample images.
 
+## CIFAR-10 Dataset
+
+The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes. Each image is represented as a 32x32x3 array. While the dataset contains more than 1,000 images per class, below are a few representative samples for each class.
+
+### Sample Images
+
+![Airplane](cifar10_samples/airplane.png "Airplane")
+![Automobile](cifar10_samples/automobile.png "Automobile")
+![Bird](cifar10_samples/bird.png "Bird")
+![Cat](cifar10_samples/cat.png "Cat")
+![Deer](cifar10_samples/deer.png "Deer")
+![Dog](cifar10_samples/dog.png "Dog")
+![Frog](cifar10_samples/frog.png "Frog")
+![Horse](cifar10_samples/horse.png "Horse")
+![Ship](cifar10_samples/ship.png "Ship")
+![Truck](cifar10_samples/truck.png "Truck")
+
+
 ## Project Overview
 
 - **Dataset:** CIFAR-10 – 60,000 32x32 color images in 10 classes.
